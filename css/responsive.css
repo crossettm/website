@@ -1,0 +1,92 @@
+/* File applied after main.css in .html files because main.css is mobile and responsive adds changes for when screen is larger.  These are "media queries." */
+
+/* Apply rules if 1) using digital screen and 2) screen width is larger than 480 pixels */
+
+
+@media screen and (min-width: 480px) {
+
+/**************  
+TWO COLUMN LAYOUT FOR CONTACT PAGE IF I ADD PHONE, ETC.
+**************/
+
+  
+#primary {
+  width: 50%;
+  float: left;
+}
+
+#secondary {
+  width: 40%;
+  float: right;
+}
+
+
+
+/**************  
+PAGE: PORTFOLIO
+**************/
+
+#gallery li {
+  width: 28.33333333333333%;
+}
+
+/* Because the gallery fits three columns before the text size puches the elements around, we need to make every fourth element clear. */
+
+#gallery li:nth-child(3n + 1) {
+  clear: left;
+}
+
+
+  
+@media screen and (min-width: 800px) {
+ 
+
+
+/**************  
+HEADER
+**************/
+  
+nav {
+  background: none;
+  float: right;
+  font-size: 1.135em;
+  margin-right: 5%;
+  text-align: right;
+  width: 45%;
+}
+  
+#logo {
+  float: left;
+  margin-left: 5%;
+  text-align: left; 
+  width: 45%; 
+}  
+  
+h1 {
+  font-size: 2.5em;
+}  
+  
+h2 {
+  font-size: 0.825em;
+  margin-bottom: 20px;
+}
+  
+header {
+  border-bottom: 5px solid #599a68;
+  margin-bottom: 60px;    
+}  
+
+
+
+/**************  
+PAGE: ABOUT
+**************/
+
+.profile-photo {
+  float: left;
+  margin: 0 5% 80px;
+}
+
+}
+  
+}

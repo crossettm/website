@@ -1,0 +1,225 @@
+
+/**************  
+GENERAL
+**************/
+
+/* Responsive design = fluid images with img max width, using % instead of pixels, media queries change layout with resolution at certain breakpoints */
+
+body {
+  font-family: 'Open Sans', sans-serif /* sets all font to default Google font unless specified different later or unavailable, which reverts to sans-serif */
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto; /* first value is above, second is below */
+  padding: 0 5%;
+}
+
+/* removes hyperlink underlining */
+a {
+  text-decoration: none;
+}  
+
+img {
+  max-width: 100%; /* images fill width of parent container */
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+
+/**************  
+HEADING
+**************/
+
+header {
+  float: left; /* no use in mobile view - for desktop view */
+  margin: 0 0 30px 0; /* top; right; bottom; left */
+  padding: 5px 0 0 0;
+  width: 100%; /* since floated elements do not have set width */
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family:'Changa One', sans-serif; /* uses Google font linked from index.html, defaults to sans-serif if unavailable */
+  margin: 15px 0;
+  font-size: 1.75em; /* em is relative unit of measurement, equal to font size.  This is .75 times larger than default font size of 16 */
+  font-weight: 400; /* h1 is bold by default */
+  line-height:0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0; /* top; left and right; bottom */
+  font-weight:normal;
+}
+
+
+
+/**************  
+NAVIGATION
+**************/
+
+nav {
+  text-align:center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}    
+
+ /* block dsplay elements push others around; in-line elements do not; block/line is in line but preserving other block features, like width, height */  
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px; /* padding is clickable, to give fingers room on mobile */
+}
+
+
+
+/**************  
+FOOTER
+**************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both; /* clear spacing on both left and right sides */
+  padding-top: 50px;
+  color: #ccc;
+}
+
+/* classes and id are same but classes are not unique = can be used to select multiple elements */
+
+.social-icon {  
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+
+/**************  
+PAGE: ART
+**************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* removes defalt bullet point list style */
+}
+
+#gallery li { /* selects list items inside gallery */
+  float: left; /* makes list items appear side-by-side */
+  width: 45%;
+  margin: 2.5%; /* 45% + 45% + 2.5% x 4 margins = 100% */
+  background-color: #f5f5f5; /* light gray background of list items */
+  color: #bdc3c7; /* unlinked, non-anchor color */
+}
+
+#gallery li a p { /* style applied to pargraphs in anchor in list items in gallery */
+  margin: 0;
+  padding: 5%; /* margin can push images to unwanted places */
+  font-size: 0.75em;
+  color: #bdc3c7; /* all of these items, linked or not, will be grey */
+}
+
+
+
+/**************  
+PAGE: ABOUT
+**************/
+
+.profile-photo {
+  clear:both;
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 80%; 
+}
+
+/* border-radius makes rounded corners, 100% = circle */
+
+
+/**************  
+PAGE: CONTACT
+**************/
+
+
+
+
+
+/************** 
+PAGE: DESIGN
+**************/
+
+
+
+
+
+
+/**************  
+COLORS
+**************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* green header */
+header {
+  background: #6ab47b; 
+  border-color: #599a68;
+}
+
+/* nav background on mobile */
+nav {
+  background: #599a68; 
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff; 
+}
+
+/* links */
+a {
+  color: #6ab47b; 
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff; 
+}
+
+/* selected nav link and hover */
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
