@@ -6,9 +6,12 @@
 @media screen and (min-width: 480px) {
 
 /**************  
-TWO COLUMN LAYOUT FOR CONTACT PAGE IF I ADD PHONE, ETC.
+CONSTRAINT FOR FORM AND TWO COLUMN LAYOUT FOR CONTACT PAGE IF I ADD PHONE, ETC.
 **************/
 
+form {
+  max-width: 480px;  
+}
   
 #primary {
   width: 50%;

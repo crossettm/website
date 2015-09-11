@@ -27,7 +27,42 @@
     <div id="wrapper">
       <section>
         <h3>General Information</h3>
-        <p>Please use LinkedIn to communicate with me for professional inquiries, Twitter if you desire my constant presence in your life, and Facebook for all other purposes.</p>
+        <p>Please use LinkedIn to communicate with me for professional inquiries, Facebook for personal matters, Twitter if you desire my constant presence in your life, or simply leave a comment in the form below.  Links are located at the bottom of the page.</p>
+      </section>
+      <section>
+        <form action="MAILTO:matthew.crossett@gmail.com" method="post"> <!--action is relative or url link to php, python, etc. program for processing.  Method is http method for submission - this posts info to server-->
+            <h4>Comments</h4>
+          
+            <fieldset>  <!-- Divides form into fields - adds spacing-->
+          
+                <label for="name">Name</label>                     
+                <input type="text" id="name" name="user_name">
+          
+                <label for="mail">Email Address</label>
+                <input type="email" id="mail" name="user_email">
+              
+                <label for="visitor_type">How do you know Matt?</label>
+                <select id="visitor_type" name="user_type">
+                    <option value="friend">Friend</option>
+                    <option value="relative">Relative</option>
+                    <option value="student">Student</option>
+                    <option value="coworker">Coworker</option>
+                    <option value="unknown">I don't!</option>
+                </select>
+            
+            </fieldset>
+          
+            <fieldset>
+          
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="user_comment"></textarea>
+              
+                <input type="checkbox" id="yes_reply" value="yes_reply" name="user_reply_preference"><label for="yes_reply" class="light">I would like a reply.</label> <br>
+              
+            </fieldset>
+            
+            <button type="submit">Submit Comment</button>
+        </form>
       </section>
       <footer>
         <a href="http://twitter.com/Matt_Crossett"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
